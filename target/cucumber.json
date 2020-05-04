@@ -1,0 +1,106 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-05-04T04:43:31.011Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7978000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.MasterHooks.setup()"
+            }
+          }
+        ],
+        "line": 2,
+        "name": "Login to application with valid username and password",
+        "description": "",
+        "id": "application-login;login-to-application-with-valid-username-and-password",
+        "after": [
+          {
+            "result": {
+              "duration": 1638000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.MasterHooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12219000000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User is on landing Page",
+            "match": {
+              "location": "stepDefinitions.loginSteps.user_is_on_landing_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3320000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user login into application with valid username and password",
+            "match": {
+              "location": "stepDefinitions.loginSteps.user_login_into_application_with_valid_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Home page is displayed",
+            "match": {
+              "location": "stepDefinitions.loginSteps.home_page_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Validate home page title",
+            "match": {
+              "location": "stepDefinitions.loginSteps.validate_home_page_title()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Logged in successfully message should be displayed",
+            "match": {
+              "location": "stepDefinitions.loginSteps.logged_in_successfully_message_should_be_displayed()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Application Login",
+    "description": "",
+    "id": "application-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Login.feature",
+    "tags": []
+  }
+]
