@@ -12,7 +12,7 @@ public class ReadConfigFile
 	{	
 		try
 		{
-			fis=new FileInputStream("C:/Users/Coditas/eclipse-workspace/Ambrycare/src/main/java/TestData/config.properties");			
+			fis=new FileInputStream(System.getProperty("user.dir")+"/src/main/java/configurations/config.properties");			
 			prop=new Properties();
 			prop.load(fis);			
 		}

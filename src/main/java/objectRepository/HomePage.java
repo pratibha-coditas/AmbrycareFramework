@@ -10,11 +10,11 @@ import org.openqa.selenium.support.PageFactory;
 public class HomePage extends BasePage 
 {
 	WebDriver driver;
-	@FindBy(xpath = "//h3[text()=\"Patients\"]")
+	@FindBy(xpath = "//h3[text()='Patients']")
 	public WebElement patientLable;
-	@FindBy(xpath = "//span[text()=\"Add patient\"]")
+	@FindBy(xpath = "//span[text()='Add patient']")
 	public WebElement addPatientLink;
-	@FindBy(xpath = "//span[text()=\"Upload Patient File\"]")
+	@FindBy(xpath = "//span[text()='Upload Patient File']")
 	public WebElement uploadPatientLink;	
 	
 	public HomePage() throws IOException {
@@ -26,7 +26,7 @@ public class HomePage extends BasePage
 	}
 	public void clickOnAddPatientLink()
 	{
-		addPatientLink.click();;
+		addPatientLink.click();
 	}
 	public void clickOnUploadPatientLink()
 	{

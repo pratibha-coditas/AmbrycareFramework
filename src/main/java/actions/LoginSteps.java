@@ -1,14 +1,14 @@
-package stepDefinitions;
+package actions;
 
 import java.io.IOException;
 
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 import utils.DriverFactory;
 
-public class loginSteps extends DriverFactory {
-	
+public class LoginSteps extends DriverFactory
+{
 	@Given("User is on landing Page")
 	public void user_is_on_landing_Page() throws IOException {
 		login.validateLoginPageTitle();
@@ -36,5 +36,6 @@ public class loginSteps extends DriverFactory {
 	public void logged_in_successfully_message_should_be_displayed() {
 	    
 	}
+
 
 }

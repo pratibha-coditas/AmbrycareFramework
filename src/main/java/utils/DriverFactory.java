@@ -18,7 +18,6 @@ import objectRepository.LoginPage;
 public class DriverFactory 
 {
 	
-	
 		ReadConfigFile config;
 		public static WebDriver driver;
 		public static LoginPage login;
@@ -33,16 +32,19 @@ public class DriverFactory
 				{
 					WebDriverManager.chromedriver().setup();
 					driver = new ChromeDriver();
+					driver.manage().window().maximize();
 				}
 				else if (browserName.equals("firefox"))
 				{
 					WebDriverManager.firefoxdriver().setup();
 				    driver = new FirefoxDriver();
+				    driver.manage().window().maximize();
 				}
 				else if (browserName.equals("ie"))
 				{
 					WebDriverManager.iedriver().setup();
 					driver = new InternetExplorerDriver();
+					driver.manage().window().maximize();
 				}
 			}
 			catch (Exception e) 

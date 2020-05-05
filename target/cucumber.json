@@ -3,15 +3,14 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-05-04T04:43:31.011Z",
         "before": [
           {
             "result": {
-              "duration": 7978000000,
+              "duration": 8587601265,
               "status": "passed"
             },
             "match": {
-              "location": "stepDefinitions.MasterHooks.setup()"
+              "location": "MasterHooks.setup()"
             }
           }
         ],
@@ -22,11 +21,20 @@
         "after": [
           {
             "result": {
-              "duration": 1638000000,
+              "duration": 2082427560,
               "status": "passed"
             },
             "match": {
-              "location": "stepDefinitions.MasterHooks.tearDown()"
+              "location": "MasterHooks.afterScenario(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 1442482889,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.AfterSteps()"
             }
           }
         ],
@@ -35,61 +43,58 @@
         "steps": [
           {
             "result": {
-              "duration": 12219000000,
-              "status": "passed"
+              "duration": 15320095500,
+              "error_message": "junit.framework.ComparisonFailure: expected:\u003cCARE Provider[]\u003e but was:\u003cCARE Provider[ Portal]\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat objectRepository.LoginPage.validateLoginPageTitle(LoginPage.java:30)\r\n\tat actions.LoginSteps.user_is_on_landing_Page(LoginSteps.java:14)\r\n\tat ✽.Given User is on landing Page(src/test/java/features/Login.feature:3)\r\n",
+              "status": "failed"
             },
             "line": 3,
             "name": "User is on landing Page",
             "match": {
-              "location": "stepDefinitions.loginSteps.user_is_on_landing_Page()"
+              "location": "LoginSteps.user_is_on_landing_Page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 3320000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 4,
             "name": "user login into application with valid username and password",
             "match": {
-              "location": "stepDefinitions.loginSteps.user_login_into_application_with_valid_username_and_password()"
+              "location": "LoginSteps.user_login_into_application_with_valid_username_and_password()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 4000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 5,
             "name": "Home page is displayed",
             "match": {
-              "location": "stepDefinitions.loginSteps.home_page_is_displayed()"
+              "location": "LoginSteps.home_page_is_displayed()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 4000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 6,
             "name": "Validate home page title",
             "match": {
-              "location": "stepDefinitions.loginSteps.validate_home_page_title()"
+              "location": "LoginSteps.validate_home_page_title()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 4000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
             "name": "Logged in successfully message should be displayed",
             "match": {
-              "location": "stepDefinitions.loginSteps.logged_in_successfully_message_should_be_displayed()"
+              "location": "LoginSteps.logged_in_successfully_message_should_be_displayed()"
             },
             "keyword": "And "
           }
@@ -100,7 +105,6 @@
     "description": "",
     "id": "application-login",
     "keyword": "Feature",
-    "uri": "file:src/test/java/features/Login.feature",
-    "tags": []
+    "uri": "src/test/java/features/Login.feature"
   }
 ]
