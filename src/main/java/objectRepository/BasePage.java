@@ -72,6 +72,18 @@ public class BasePage extends DriverFactory
 			attempts++;
 		}
 	}
+	
+	public void waitAndClickElementByContainsString(List<WebElement> element,String name)
+	{
+		for(int i=0 ; i<element.size() ; i++)
+		{
+		    if(element.get(i).getText().contains(name))
+		    {
+		    	this.wait.until(ExpectedConditions.elementToBeClickable(element.get(i))).click();
+		        break;
+		    }
+		}
+	}
 
 	public void clickOnTextFromDropdownList(WebElement list, String textToSearchFor) throws Exception {
 		Wait<WebDriver> tempWait = new WebDriverWait(driver, 30);
@@ -232,8 +244,8 @@ public class BasePage extends DriverFactory
 	}
 
 
-	public boolean waitUntilPreLoadElementDissapears(By element) {
-		return this.wait.until(ExpectedConditions.invisibilityOfElementLocated(element));
+	public boolean waitUntilPreLoadElementDissapears(WebElement element) {
+		return this.wait.until(ExpectedConditions.invisibilityOf(element));
 	}
 
 	public BasePage loadUrl(String url) throws Exception {

@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 8587601265,
+              "duration": 6446968219,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 2082427560,
+              "duration": 320938,
               "status": "passed"
             },
             "match": {
@@ -30,7 +30,7 @@
           },
           {
             "result": {
-              "duration": 1442482889,
+              "duration": 58819,
               "status": "passed"
             },
             "match": {
@@ -43,9 +43,8 @@
         "steps": [
           {
             "result": {
-              "duration": 15320095500,
-              "error_message": "junit.framework.ComparisonFailure: expected:\u003cCARE Provider[]\u003e but was:\u003cCARE Provider[ Portal]\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat objectRepository.LoginPage.validateLoginPageTitle(LoginPage.java:30)\r\n\tat actions.LoginSteps.user_is_on_landing_Page(LoginSteps.java:14)\r\n\tat ✽.Given User is on landing Page(src/test/java/features/Login.feature:3)\r\n",
-              "status": "failed"
+              "duration": 15157363538,
+              "status": "passed"
             },
             "line": 3,
             "name": "User is on landing Page",
@@ -56,7 +55,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2977951191,
+              "status": "passed"
             },
             "line": 4,
             "name": "user login into application with valid username and password",
@@ -67,9 +67,28 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 3858351775,
+              "status": "passed"
             },
             "line": 5,
+            "name": "Popup is displayed as \"Logged in successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Logged in successfully",
+                  "offset": 23
+                }
+              ],
+              "location": "LoginSteps.popup_is_displayed_as(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14513147808,
+              "status": "passed"
+            },
+            "line": 6,
             "name": "Home page is displayed",
             "match": {
               "location": "LoginSteps.home_page_is_displayed()"
@@ -78,9 +97,10 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 81715,
+              "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "Validate home page title",
             "match": {
               "location": "LoginSteps.validate_home_page_title()"
@@ -89,9 +109,10 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 89610,
+              "status": "passed"
             },
-            "line": 7,
+            "line": 8,
             "name": "Logged in successfully message should be displayed",
             "match": {
               "location": "LoginSteps.logged_in_successfully_message_should_be_displayed()"

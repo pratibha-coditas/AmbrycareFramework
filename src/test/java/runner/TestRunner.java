@@ -17,7 +17,7 @@ public class TestRunner
 {
 	@AfterClass
 	public static void writeExtentReport() {
-		Reporter.loadXMLConfig(new File(System.getProperty("user.dir") + "src\\main\\java\\utils\\ReportsConfig.xml"));
+		Reporter.loadXMLConfig(new File(System.getProperty("user.dir") + "\\src\\main\\java\\utils\\ReportsConfig.xml"));
 	}
 }
 

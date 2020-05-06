@@ -45,9 +45,9 @@ public class MasterHooks extends DriverFactory
 	}
 	@After(order = 0)
 	public void AfterSteps() {
-		driver.manage().deleteAllCookies();
-		driver.quit();
-		driver = null;
+//		driver.manage().deleteAllCookies();
+//		driver.quit();
+//		driver = null;
 	}
 }
 

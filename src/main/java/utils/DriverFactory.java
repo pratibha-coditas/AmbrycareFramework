@@ -54,7 +54,7 @@ public class DriverFactory
 			finally 
 			{			
 				login=PageFactory.initElements(driver, LoginPage.class);
-//				home=PageFactory.initElements(driver, HomePage.class);
+				home=PageFactory.initElements(driver, HomePage.class);
 			}
 			return driver;
 		}

@@ -18,13 +18,24 @@ public class LoginSteps extends DriverFactory
 	public void user_login_into_application_with_valid_username_and_password() throws Exception 
 	{
 		login.validateCAREImage();
-		login.login();
+		login.login();	
+	}
+	
+	@Then("^Popup is displayed as \"([^\"]*)\"$")
+	public void popup_is_displayed_as(String arg1) throws Throwable 
+	{
+		login.validateloggedInSuessfullyMassage();
 	}
 
 	@Then("Home page is displayed")
-	public void home_page_is_displayed() 
+	public void home_page_is_displayed() throws Exception 
 	{
-	    
+//	    home.verifyHomePageEmailId();
+	    home.verifyPatientsLableDisplayed();	
+	    home.clickOnAddPatientLink();
+	    home.EnterFirstName("Priti");
+	    home.EnterLastName("patil");
+	    home.EnterDateOfBirth("05","30","2000");
 	}
 
 	@Then("Validate home page title")
@@ -36,6 +47,7 @@ public class LoginSteps extends DriverFactory
 	public void logged_in_successfully_message_should_be_displayed() {
 	    
 	}
+
 
 
 }

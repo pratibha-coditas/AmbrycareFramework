@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 8587601265,
+  "duration": 6446968219,
   "status": "passed"
 });
 formatter.scenario({
@@ -30,16 +30,21 @@ formatter.step({
 });
 formatter.step({
   "line": 5,
-  "name": "Home page is displayed",
+  "name": "Popup is displayed as \"Logged in successfully\"",
   "keyword": "Then "
 });
 formatter.step({
   "line": 6,
-  "name": "Validate home page title",
+  "name": "Home page is displayed",
   "keyword": "Then "
 });
 formatter.step({
   "line": 7,
+  "name": "Validate home page title",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 8,
   "name": "Logged in successfully message should be displayed",
   "keyword": "And "
 });
@@ -47,40 +52,56 @@ formatter.match({
   "location": "LoginSteps.user_is_on_landing_Page()"
 });
 formatter.result({
-  "duration": 15320095500,
-  "error_message": "junit.framework.ComparisonFailure: expected:\u003cCARE Provider[]\u003e but was:\u003cCARE Provider[ Portal]\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat objectRepository.LoginPage.validateLoginPageTitle(LoginPage.java:30)\r\n\tat actions.LoginSteps.user_is_on_landing_Page(LoginSteps.java:14)\r\n\tat ✽.Given User is on landing Page(src/test/java/features/Login.feature:3)\r\n",
-  "status": "failed"
+  "duration": 15157363538,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_login_into_application_with_valid_username_and_password()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2977951191,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Logged in successfully",
+      "offset": 23
+    }
+  ],
+  "location": "LoginSteps.popup_is_displayed_as(String)"
+});
+formatter.result({
+  "duration": 3858351775,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.home_page_is_displayed()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 14513147808,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.validate_home_page_title()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 81715,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.logged_in_successfully_message_should_be_displayed()"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "duration": 2082427560,
+  "duration": 89610,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1442482889,
+  "duration": 320938,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 58819,
   "status": "passed"
 });
 });
